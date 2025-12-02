@@ -1,4 +1,4 @@
-# 👨‍💻 Dokumentacja Deweloperska  
+#  Dokumentacja Deweloperska  
 ## System Rozpoznawania Twarzy – GUI
 
 ---
@@ -79,6 +79,7 @@ python main.py
 ---
 
 # 4. Struktura projektu
+```text
 projekt/
 │
 ├── gui.py # Główne okno GUI (Tkinter)
@@ -100,7 +101,7 @@ projekt/
 
 
 ---
-
+```
 # 5. Opis głównych modułów
 
 ## 5.1 `gui.py`  

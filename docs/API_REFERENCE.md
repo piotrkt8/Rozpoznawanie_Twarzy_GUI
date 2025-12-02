@@ -1,6 +1,5 @@
 # 📘 API_REFERENCE.md — Dokumentacja Funkcji i Klas
 
-# 📦 API Reference – Dokumentacja Kodów  
 **Face Recognition App (OpenCV + VGGFace + GUI)**  
 Wersja: 1.0
 
