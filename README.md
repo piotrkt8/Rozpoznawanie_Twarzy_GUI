@@ -1,4 +1,4 @@
-# 🎯 Face Recognition App – Rozpoznawanie Twarzy z GUI
+# Face Recognition App – Rozpoznawanie Twarzy z GUI
 
 Aplikacja służy do **rozpoznawania twarzy w czasie rzeczywistym** z użyciem kamery internetowej.  
 Wykorzystuje:
@@ -8,35 +8,30 @@ Wykorzystuje:
 - Logistic Regression – klasyfikacja osób  
 - Tkinter – interfejs graficzny (GUI)  
 
-Projekt spełnia wymagania:  
-✔ **PPP – Python**  
-✔ **OiRPOS – Open Source + dokumentacja + pliki markdown**
 
----
+# Funkcje aplikacji
 
-# 🚀 Funkcje aplikacji
-
-### 🔍 Rozpoznawanie twarzy (LIVE)
+### Rozpoznawanie twarzy (LIVE)
 - wykrywanie twarzy z kamery  
 - generowanie embeddingów VGGFace  
 - predykcja osoby i pewności (%)  
 - oznaczenie twarzy ramką (zielona – znany, czerwona – obcy)
 
-### ➕ Dodawanie nowych osób
+### Dodawanie nowych osób
 - wykonywanie 20 zdjęć twarzy przez kamerę  
 - zapisywanie materiału do bazy `faces/<nazwa>/`
 
-### 🧠 Trening modelu
+### Trening modelu
 - trenowanie modelu na podstawie zapisanych zdjęć  
 - zapis modelu: `results/logreg_model.pkl`
 
-### 🖥️ GUI
+### GUI
 - panel sterowania (Start, Stop, Dodaj użytkownika, Trenuj model, Usuń użytkownika)  
 - podgląd obrazu z kamery  
 
 ---
 
-# 🛠️ Technologie
+# Technologie
 
 | Technologia | Zastosowanie |
 |------------|--------------|
@@ -49,34 +44,31 @@ Projekt spełnia wymagania:
 
 ---
 
-# 📁 Struktura katalogów
+# Struktura katalogów
 projekt/
 │
-├── gui.py                 # Interfejs graficzny
-├── main.py                # Plik startowy
-├── camera_live.py         # Obsługa kamery
-├── haar_detector.py       # Detekcja twarzy
-├── vggface_recognizer.py  # Sieci neuronowe
+├── gui.py                 # Logika interfejsu (przyciski, okna)
+├── main.py                # Punkt startowy aplikacji
+├── camera_live.py         # Obsługa kamery i wątek detekcji
+├── haar_detector.py       # Algorytm detekcji twarzy (Haar)
+├── vggface_recognizer.py  # Logika sieci neuronowej (VGGFace)
 │
 ├── faces/                 # Baza zdjęć (ignorowane przez git)
-├── dataset/               # Import zdjęć (ignorowane przez git)
-├── results/               # Zapisany model
+├── dataset/               # Folder importu (ignorowane przez git)
+├── results/               # Zapisany model (.pkl)
 │
-├── requirements.txt       # Lista bibliotek
-├── Readme.md              # Ten plik
-└── docs/                  # Dokumentacja
+└── docs/                  # Pełna dokumentacja
     ├── USER_GUIDE.md
     ├── DEVELOPER.md
     └── API_REFERENCE.md
-
 ---
 
-# 🔧 Instalacja
+# Instalacja
 
 ### 1. Pobierz projekt
 ```bash
-git clone <adres_repo>
-cd projekt
+git clone [https://github.com/piotrkt8/Rozpoznawanie_Twarzy_GUI.git](https://github.com/piotrkt8/Rozpoznawanie_Twarzy_GUI.git)
+cd Rozpoznawanie_Twarzy_GUI
 
 ### 2. Utwórz środowisko wirtualne
 python -m venv venv
@@ -93,8 +85,7 @@ python main.py
 • panelami sterowania
 • przyciskami: Start, Stop, Dodaj użytkownika, Trenuj, Usuń itd.
 
-📄 Dokumentacja projektu
-Komplet dokumentacji znajduje się w katalogu docs/:
+Dokumentacja projektu
 • Instrukcja użytkownika:
 docs/USER_GUIDE.md
 • Dokumentacja deweloperska:
