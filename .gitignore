@@ -5,6 +5,7 @@ venv/
 .venv/
 dataset/
 faces/
+test/
 results/
 !results/logreg_model.pkl
 *.rar
