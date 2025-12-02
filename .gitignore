@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.vscode/
+venv/
+.venv/
+dataset/
+faces/
+results/
+!results/logreg_model.pkl
+*.rar
+*.zip
+*.log
