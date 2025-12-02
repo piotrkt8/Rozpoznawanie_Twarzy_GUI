@@ -45,7 +45,6 @@ Wykorzystuje:
 ---
 
 # Struktura katalogów
-## 📁 Struktura katalogów
 
 ```text
 projekt/
@@ -67,7 +66,7 @@ projekt/
     ├── DEVELOPER.md
     └── API_REFERENCE.md
 ---
-
+```
 # Instalacja
 
 ### 1. Pobierz projekt
