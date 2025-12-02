@@ -45,10 +45,13 @@ Wykorzystuje:
 ---
 
 # Struktura katalogów
+## 📁 Struktura katalogów
+
+```text
 projekt/
 │
-├── gui.py                 # Logika interfejsu (przyciski, okna)
-├── main.py                # Punkt startowy aplikacji
+├── gui.py                 # Interfejs graficzny (Logika przycisków, okna)
+├── main.py                # Plik startowy aplikacji
 ├── camera_live.py         # Obsługa kamery i wątek detekcji
 ├── haar_detector.py       # Algorytm detekcji twarzy (Haar)
 ├── vggface_recognizer.py  # Logika sieci neuronowej (VGGFace)
@@ -57,6 +60,8 @@ projekt/
 ├── dataset/               # Folder importu (ignorowane przez git)
 ├── results/               # Zapisany model (.pkl)
 │
+├── requirements.txt       # Lista bibliotek
+├── Readme.md              # Ten plik
 └── docs/                  # Pełna dokumentacja
     ├── USER_GUIDE.md
     ├── DEVELOPER.md
